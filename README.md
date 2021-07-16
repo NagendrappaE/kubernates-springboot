@@ -58,6 +58,19 @@ kubectl delete deployment <deploymentname>
   kubectl delete deployment hello-node
 
   
-
+# get all the details
+  kubectl get all
+  
+ # see the pod logs 
+  kubectl logs <podname>
+  
+  kubectl logs gs-spring-boot-k8s-56fdc68979-4cvqw
+  
+  #copy the files to kubernate pods
+  https://medium.com/@nnilesh7756/copy-directories-and-files-to-and-from-kubernetes-container-pod-19612fa74660
+  
+  
+  #############################################NEW FLOW   using comands########################################
+  
   
   
