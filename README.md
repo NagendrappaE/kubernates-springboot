@@ -122,3 +122,5 @@ kubectl delete deployment <deploymentname>
   
   #############END####################################
   
+  debug kubernates:
+  https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
