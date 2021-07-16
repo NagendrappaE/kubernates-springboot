@@ -76,7 +76,7 @@ kubectl delete deployment <deploymentname>
   
   
   
-  #############################################NEW FLOW   using comands
+  #############################################NEW FLOW   using comands############################
   note: check imageable to pull from repo (docker hub) or not
   docker image pull <<image name>>
   cmd  :  docker image pull amanfiet/spring-docker-demo:latest
@@ -113,11 +113,11 @@ kubectl delete deployment <deploymentname>
   4.port forwarding 
   service/helloworld --the service name
   
-  kubectl port-forward service/helloworld 1233:8080
+  kubectl port-forward service/helloworld 1233:8080 &
   
   acess :http://localhost:1233/data
   
   
   
-  
+  #############END####################################
   
