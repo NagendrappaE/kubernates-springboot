@@ -70,7 +70,49 @@ kubectl delete deployment <deploymentname>
   https://medium.com/@nnilesh7756/copy-directories-and-files-to-and-from-kubernetes-container-pod-19612fa74660
   
   
-  #############################################NEW FLOW   using comands########################################
+  
+  #############################################NEW FLOW   using comands
+  note: check imageable to pull from repo (docker hub) or not
+  docker image pull <<image name>>
+  cmd  :  docker image pull amanfiet/spring-docker-demo:latest
+  
+  
+  
+  1.create the deployment with the deployment name "helloworld"
+  
+  kubectl create deployment helloworld --image amanfiet/spring-docker-demo:latest --replicas=3
+  
+  2. get the status of pods created or not
+  kubectl get all
+  
+  
+  3.create service 
+   8080--application rn port
+   1234 tcp connected port used to access app.
+  
+  note:kubectl create service --help
+  
+  clusterip    Create a ClusterIP service.
+  a) 
+    kubectl create service <<serviceName>> <<deploymentName>> --tcp 1234:8080
+  
+  kubectl create service clusterip helloworld --tcp 8080:8080
+  
+  %%%%%%%%%%%%%%%%%%%%%%%********OR**********************
+  
+  b) nodeport
+  
+  kubectl create service nodeport helloworld --tcp 8080:8080
+  
+  
+  4.port forwarding 
+  service/helloworld --the service name
+  
+  kubectl port-forward service/helloworld 1233:8080
+  
+  acess :http://localhost:1233/data
+  
+  
   
   
   
