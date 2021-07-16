@@ -62,7 +62,7 @@ kubectl delete deployment <deploymentname>
   kubectl get all
   
  # see the pod logs 
-  kubectl logs <podname>
+  kubectl logs <<podname>>
   
   kubectl logs gs-spring-boot-k8s-56fdc68979-4cvqw
   
