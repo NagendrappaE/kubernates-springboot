@@ -124,3 +124,13 @@ kubectl delete deployment <deploymentname>
   
   debug kubernates:
   https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+
+  
+  #1  take container details with below comand
+  kubectl describe pods
+  #2
+  kubectl exec <<PODNAME>> -c <<docker containername>> <linux comand>
+  
+  kubectl exec -it helloworld-7f4c897d57-5kzk4 -c spring-docker-demo -- /bin/sh
+  
+  
