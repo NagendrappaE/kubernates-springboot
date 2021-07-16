@@ -33,6 +33,11 @@ ex:get pod gs-spring-boot-k8s-56fdc68979-4cvqw
 
   https://kubernetes.io/docs/tutorials/hello-minikube/
   
+  ####################################################END################################
+ #debug the service  link 
+  
+  https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+  
   
   # get the all the services
   kubectl get services
