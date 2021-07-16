@@ -118,6 +118,7 @@ kubectl delete deployment <deploymentname>
   acess :http://localhost:1233/data
   
   
+  to check the port :ps -ef|grep port-forward
   
   #############END####################################
   
